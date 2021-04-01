@@ -1,0 +1,369 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+body {
+	font-family: 'Noto Sans Japanese', sans-serif;
+  margin :0;
+}
+
+header {
+  background-image: url(img/marci-angeles-M9WYRLN26Xs-unsplash.png);
+  background-size: cover;
+  background-position: center center;
+  height :100vh;
+}
+/* ヘッダーメニュー */
+.headerNav {
+  width :100%;
+  height :90px;
+  display :flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:rgba(255,255,255,0.5);
+  position: fixed;
+  z-index: 999;
+}
+
+.headerLogo{
+  padding :21px 35px;
+}
+
+.headerNav nav ul {
+  display :flex;
+  padding-left :0;
+}
+
+.headerNav nav li {
+  list-style: none;
+}
+
+.headerNav nav a {
+  display: block;
+  text-decoration: none;
+  color :#333029;
+  font-weight: bold;
+  padding-right :30px;
+  font-size :20px;
+  font-family: 'Europa-Bold';
+}
+
+.headerNav nav a span {
+  font-size :12px;
+  margin :0;
+  padding :0;
+}
+
+ ul li:last-child{
+  padding-right :5px;
+}
+/* ヘッダーメニューここまで */
+/* メインビジュアル */
+.mainVisual {
+  display :flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.visualText {
+  text-align: center;
+}
+
+.visualText p {
+  font-family: 'ヒラギノ角ゴ Pro';
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  line-height: 1.8em;
+}
+
+.visualBtn{
+  margin-top :52px;
+  display: flex;
+  justify-content: center;
+}
+
+.visualBtn a{
+  text-decoration: none;
+  color :#fff;
+  background-color :#D02849;
+  padding :17px 71px 17px 107px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.arrow::before {
+     position: absolute;
+     content: '';
+     width: 6px;
+     height: 6px;
+     border-top: solid 2px #fff;
+     border-right: solid 2px #fff;
+     -webkit-transform: rotate(45deg);
+     transform: rotate(45deg);
+     top: 50%;
+     left: 20%;
+     margin-top :-5px;
+}
+/* メインビジュアルここまで */
+/* 共通幅 */
+.contentLine{
+  width :1024px;
+  margin :0 auto;
+}
+/* コンセプトエリア */
+.conceptWrapper{
+  display :flex;
+  background-image: url(img/suhyeon-choi-es9AZ5ItoX8-unsplash.png);
+  background-repeat: no-repeat;
+  background-position: 100% 60%;
+  height :120vh;
+  font-family: '源ノ角ゴシック JP';
+  color:#333029;
+}
+
+.conceptTitle{
+  padding-top :112px;
+  padding-bottom :80px;
+}
+
+.conceptTitle h1 {
+  font-size :36px;
+  letter-spacing: 0.2em;
+}
+
+.conceptText{
+  padding-left :30px;
+  margin-bottom :80px;
+  border-left: solid 5px #000;
+}
+
+.conceptText h3{
+  font-size :24px;
+  line-height: 2.5em;
+  letter-spacing: 0.2em;
+  margin :0;
+}
+
+.conceptSubText p {
+  line-height: 2em;
+  font-weight: lighter;
+}
+
+.arrowbar{
+  font-size :20px;
+  font-weight: bold;
+  margin-left :227px;
+  position: relative;
+}
+
+.arrowbar::before{
+  position: absolute;
+  content: '';
+  width :155px;
+  height :16px;
+  top :0;
+  left :0;
+  margin-top :15px;
+  border-bottom: 2px solid #000;
+}
+
+.arrowbar::after{
+  position: absolute;
+  content: '';
+  width :155px;
+  height :20px;
+  top :0;
+  left :0;
+  margin-top :15px;
+  border-right :2px solid #000;
+  transform-origin: 97% 100%;
+  transform: rotate(-40deg);
+}
+/* 背景白い三角形の装飾用 */
+.triangle {
+	width:0;
+	height: 0;
+	border-top: 10vw solid #fff;
+	border-right: 49.3vw solid transparent;
+  border-left: 49.3vw solid transparent;
+	border-bottom: 10vw solid transparent;
+  position: absolute;
+}
+/* 背景白い三角形の装飾用ここまで */
+.height {
+  height :200px;
+}
+/* メインエリア */
+.mainWrapper{
+  background-color :#EFEFEF;
+}
+
+.mainTitle{
+  text-align: center;
+}
+
+.mainTitle h1{
+  display: inline-block;
+  position: relative;
+}
+/* 文字の下の線 */
+.mainTitle h1::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -30px;
+  display: inline-block;
+  width: 230px;
+  height: 3px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: black;
+}
+/* サポート、文字のボックスと写真が重なっている所 */
+.item {
+  margin-top :150px;
+  margin-bottom :100px;
+  display :flex;
+  flex-direction: row-reverse;
+  position: relative;
+  justify-content: space-between;
+}
+
+.itemText{
+  padding :20px 200px 20px 30px;
+  border: 5px solid #fff;
+}
+
+.itemText h3{
+  font-family: '源ノ角ゴシック JP';
+  font-size :24px;
+  line-height: 1.8em;
+}
+
+.itemText p {
+  font-family: '源ノ角ゴシック JP';
+  font-weight: lighter;
+  line-height: 1.8em;
+}
+
+figure{
+  margin :0;
+}
+
+figure img{
+  position: absolute;
+  top:-10%;
+  left :50%;
+}
+
+.item2{
+  display :flex;
+  position: relative;
+  justify-content: space-between;
+  margin-top :150px;
+}
+
+.itemText2 {
+  padding :20px 30px 20px 200px;
+  border: 5px solid #fff;
+  box-sizing: border-box;
+}
+
+.itemText2 h3{
+  font-family: '源ノ角ゴシック JP';
+  font-size :24px;
+  line-height: 1.8em;
+}
+
+.itemText2 p {
+  font-family: '源ノ角ゴシック JP';
+  font-weight: lighter;
+  line-height: 1.8em;
+}
+
+.itemImg2 img{
+  position: absolute;
+  top :-10%;
+  right :50%;
+}
+/* サポート文字と写真が重なっている所ここまで */
+.reedImg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(img/christine-donaldson-KEqGKQCAKxo-unsplash-1.png);
+  background-size: cover;
+  height :230px;
+  width :100%;
+}
+
+.reedImg h4{
+  color :#fff;
+  font-size :24px;
+  font-weight: lighter;
+}
+
+.reed{
+  height :430px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:#EFEFEF;
+}
+/* 丸い背景色３つ並べてる */
+.circles {
+  display :flex;
+  justify-content: space-between;
+  width :580px;
+  margin :0 auto;
+}
+
+.circle {
+  width :160px;
+  height :160px;
+  background-color :#EBD2D7;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle p {
+  font-size :14px;
+  font-weight: lighter;
+  color :#333029;
+  text-align: center;
+}
+
+.circle2{
+  width :160px;
+  height :160px;
+  background-color :#A7DAE5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle2 p {
+  font-size :14px;
+  font-weight: lighter;
+  color :#333029;
+  text-align: center;
+}
+/* 丸い背景色３つ並べてるここまで */
+.contact {
+  text-align: center;
+  margin :60px 0;
+}
+
+.contact h1{
+  font-size :36px;
+  letter-spacing: 0.1em;
+  margin-bottom :30px;
+}
+
+.contact p {
+  font-weight:bold;
+  line-height: 2em;
+  letter-spacing: 0.1em;
+}
